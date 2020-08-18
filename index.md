@@ -17,19 +17,25 @@
                 <img src="resources/img/logo.png" alt="varan logo" class="logo">
                 <ul class="main-nav">
                     <li><a href="#">Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Maintenanace</a></li>
                     <li><a href="#">New born</a></li>
                     <li><a href="#">Sign up</a></li>
                 </ul>
             </div>
         </nav>
-        
+
         <div class="varan-text-box">
             <h1>Little drops of me, in here</h1>
             <a class="btn btn-full" href="#">Products</a>
-            <a  class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-ghost" href="#">Show me more</a>
         </div>
     </header>
+
+
+    <section class="section-features">
+        
+
+    </section>
 
 </body>
 
