@@ -23,6 +23,17 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+
+.clearfix{zoom: 1;}
+
+.clearfix::after{
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ------------------------------------------------------------*/
 /* REUSEABLE COMPONENTS */
 /* ------------------------------------------------------------*/
@@ -244,4 +255,49 @@ header {
 .product-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+
+
+/* ------------------------------------------------------------*/
+/* MAINTENANACE */
+/* ------------------------------------------------------------*/
+
+
+.section-maintenanace{
+  background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding: 0 3%;
+  margin-top: 30px;
+
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 80px;
+
+}
+.care-photo {
+  width: 60%;
+}
+
+
+.care-steps{
+  margin-bottom: 50px;
+}
+.care-steps div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  padding : 5px;
+  text-align: center;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
 }
