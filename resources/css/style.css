@@ -23,11 +23,12 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
 
-.clearfix{zoom: 1;}
-
-.clearfix::after{
-  content: " ";
+.clearfix::after {
+  content: ' ';
   clear: both;
   display: block;
   height: 0;
@@ -103,6 +104,7 @@ h3 {
   font-size: 90%;
   line-height: 145%;
   text-align: justify;
+  font-size: 120%;
 }
 
 /* ---- ICONS ---- */
@@ -112,6 +114,35 @@ h3 {
   font-size: 350%;
   color: #e67e22;
   margin-bottom: 10px;
+}
+
+.icon-small {
+  color: #e67e22;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+/* ---- LINKS ---- */
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: color 0.2s, border 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+  
 }
 
 /* ---- BUTTONS ---- */
@@ -209,7 +240,6 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
-
 /* ------------------------------------------------------------*/
 /* FEATURES */
 /* ------------------------------------------------------------*/
@@ -245,11 +275,11 @@ header {
 }
 
 .product-photo img {
-  opacity: .7;
+  opacity: 0.7;
   width: 100%;
   height: 20vw;
   transform: scale(1.15);
-  transition: transform 0.5s , opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .product-photo img:hover {
@@ -257,14 +287,11 @@ header {
   transform: scale(1.03);
 }
 
-
-
 /* ------------------------------------------------------------*/
 /* MAINTENANACE */
 /* ------------------------------------------------------------*/
 
-
-.section-maintenanace{
+.section-maintenanace {
   background-color: #f4f4f4;
 }
 
@@ -272,20 +299,17 @@ header {
   text-align: right;
   padding: 0 3%;
   margin-top: 30px;
-
 }
 
 .steps-box:last-child {
   padding-left: 3%;
   margin-top: 80px;
-
 }
 .care-photo {
   width: 60%;
 }
 
-
-.care-steps{
+.care-steps {
   margin-bottom: 50px;
 }
 .care-steps div {
@@ -295,9 +319,23 @@ header {
   border-radius: 50%;
   width: 55px;
   height: 55px;
-  padding : 5px;
+  padding: 5px;
   text-align: center;
   float: left;
   font-size: 150%;
   margin-right: 25px;
+}
+
+/* ------------------------------------------------------------*/
+/* NEW BORN */
+/* ------------------------------------------------------------*/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.item-feature {
+  margin-bottom: 5px;
 }
