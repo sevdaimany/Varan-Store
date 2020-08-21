@@ -137,7 +137,8 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
-  transition: color 0.2s, border 0.2s;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: color 0.2s, border-bottom 0.2s;
 }
 
 a:hover,
@@ -156,6 +157,7 @@ input[type='submit'] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -197,6 +199,7 @@ input[type='submit']:active {
 /* ------------------------------------------------------------*/
 
 header {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/varan.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('img/varan.jpg');
   background-size: cover;
@@ -210,6 +213,8 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -238,6 +243,7 @@ header {
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
@@ -284,12 +290,17 @@ header {
   opacity: 0.7;
   width: 100%;
   height: 20vw;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s;
 }
 
 .product-photo img:hover {
   opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -352,6 +363,7 @@ header {
 /* ------------------------------------------------------------*/
 
 .section-varanies {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/varanies.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(img/varanies.jpg);
   background-size: cover;
@@ -462,6 +474,7 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -480,6 +493,7 @@ footer {
 .ion-social-instagram,
 .ion-social-googleplus,
 .ion-social-whatsapp {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
