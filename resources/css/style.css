@@ -218,12 +218,25 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo{
   margin-top: 10px;
   height: 200px;
   width: auto;
   float: left;
 }
+
+
+
+.logo-black{
+    display: none;
+    margin: 5px 0;
+    height: 55px;
+    width: auto;
+    float: left;
+    top: 0px;
+    transform: scale(2.2);
+}
+/* main navi */
 .main-nav {
   margin-top: 60px;
   float: right;
@@ -252,6 +265,34 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+
+/* sticky navi */
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #efefef;
+}
+
+
+.sticky .main-nav {
+  margin-top: 20px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 21px 0px;
+  color: #555;
+}
+
+.sticky .logo { display: none ;}
+
+.sticky .logo-black {  display: block;}
 /* ------------------------------------------------------------*/
 /* FEATURES */
 /* ------------------------------------------------------------*/
