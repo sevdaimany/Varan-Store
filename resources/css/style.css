@@ -235,6 +235,10 @@ header {
     float: left;
     top: 0px;
     transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -moz-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    -o-transform: scale(2.2);
 }
 /* main navi */
 .main-nav {
@@ -265,6 +269,19 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* mobile navi */
+.mobile-nav-icon {
+
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+
+}
+.mobile-nav-icon i {
+  font-size: 200%;
+  color :#fff;
+}
 
 /* sticky navi */
 
