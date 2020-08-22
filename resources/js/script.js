@@ -5,11 +5,10 @@ $(".js--section-features").waypoint(function(direction){
 
     if (direction == "down"){
         $('nav').addClass("sticky");
-    }
-    else {
+    } else {
         $('nav').removeClass("sticky");
-}},
-{  offset:"60px ;"
+}
+},{  offset:"60px ;"
 });
 
 
@@ -22,7 +21,8 @@ $(".js--section-features").waypoint(function(direction){
         $('html, body').animate({scrollTop: $('.js--section-features').offset().top},1000);
     });
 
-    /* navigation scroll */
+    
+    /* Navigation scroll */
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -37,5 +37,39 @@ $(".js--section-features").waypoint(function(direction){
           }
         });
       });
+      
   
+
+
+      /* animations on scroll */
+      
+      $('.js--wp-1').waypoint(function(direction){
+          $('.js--wp-1').addClass('animated fadeIn');
+      }, { 
+          offset: '50%'
+         });
+
+         
+      $('.js--wp-2').waypoint(function(direction){
+        $('.js--wp-2').addClass('animated fadeInUp');
+    }, { 
+        offset: '50%'
+       });
+
+
+       
+      $('.js--wp-3').waypoint(function(direction){
+        $('.js--wp-3').addClass('animated fadeIn');
+    }, { 
+        offset: '50%'
+       });
+
+
+
+
+   
 });
+
+
+
+
